@@ -399,8 +399,8 @@ body {
 
 /* Profile Image Styles */
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 12px;
   object-fit: cover;
   border: 3px solid #2563eb;
@@ -417,11 +417,11 @@ body {
   }
   
   .profile-image {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     align-self: center;
   }
-
+  
 }
 
 }

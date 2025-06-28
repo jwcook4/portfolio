@@ -103,17 +103,37 @@ const CybersecurityPortfolio = () => {
           </div>
           
           <div style={{
-            flexShrink: 0
+            flexShrink: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '140px',
+            height: '140px',
+            backgroundColor: '#f3f4f6',
+            border: '2px dashed #d1d5db',
+            borderRadius: '12px',
+            color: '#6b7280',
+            fontSize: '12px',
+            textAlign: 'center'
           }}>
             <img 
               src="/profile-photo.jpg"
               alt="John Wesley Cook"
+              onLoad={(e) => {
+                e.target.parentElement.style.display = 'block';
+                e.target.parentElement.style.backgroundColor = 'transparent';
+                e.target.parentElement.style.border = 'none';
+              }}
+              onError={(e) => {
+                console.log('Image failed to load');
+                e.target.style.display = 'none';
+                e.target.parentElement.innerHTML = 'Photo<br/>Not Found';
+              }}
               style={{
-                width: '120px',
-                height: '120px',
+                width: '140px',
+                height: '140px',
                 borderRadius: '12px',
                 objectFit: 'cover',
-                border: '3px solid #2563eb',
                 boxShadow: '0 4px 12px rgba(37, 99, 235, 0.2)'
               }}
             />
