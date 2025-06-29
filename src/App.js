@@ -54,15 +54,11 @@ const CybersecurityPortfolio = () => {
       lineHeight: 1.6,
       color: '#333'
     }}>
-      {/* Header */}
+      {/* Header - Now scrolls with content */}
       <header style={{
         backgroundColor: 'rgba(240, 233, 223, 0.95)',
         borderBottom: '1px solid #d4c4b0',
-        padding: '24px 0',
-        position: 'sticky',
-        top: 0,
-        zIndex: 100,
-        backdropFilter: 'blur(10px)'
+        padding: '24px 0'
       }}>
         <div style={{
           maxWidth: '1000px',
@@ -213,13 +209,13 @@ const CybersecurityPortfolio = () => {
                 lineHeight: 1.7,
                 maxWidth: '800px'
               }}>
-              I’m currently pursuing a degree in Management Information Systems at The University of Alabama, specializing in Business Cyber Security, with plans to graduate in December 2025. I’m passionate about using technology to solve real-world business problems and strengthen cybersecurity postures.
+              I'm currently pursuing a degree in Management Information Systems at The University of Alabama, specializing in Business Cyber Security, with plans to graduate in December 2025. I'm passionate about using technology to solve real-world business problems and strengthen cybersecurity postures.
 
               Recently, I developed a cross-platform app for the Association for Information Systems (AIS) using React.js, Prisma, and PostgreSQL. The project challenged me to build seamless front-end and back-end integrations while applying scalable, secure database solutions — sharpening my skills in full-stack development, UI/UX design, and modern database architecture.
               
-              Beyond app development, I’ve built a strong foundation in programming with C#, SQL, and JavaScript (including frameworks like Vue.js and Angular). I’m also experienced with tools like Tableau, VMware, and Wireshark — having worked on full-stack web builds, SQL database optimization, and hands-on cybersecurity labs focused on identifying and mitigating network vulnerabilities.
+              Beyond app development, I've built a strong foundation in programming with C#, SQL, and JavaScript (including frameworks like Vue.js and Angular). I'm also experienced with tools like Tableau, VMware, and Wireshark — having worked on full-stack web builds, SQL database optimization, and hands-on cybersecurity labs focused on identifying and mitigating network vulnerabilities.
               
-              This summer, I’m continuing to grow as an Information Security Analyst Intern with Protective Life, where I’m applying what I’ve learned in real enterprise environments.
+              This summer, I'm continuing to grow as an Information Security Analyst Intern with Protective Life, where I'm applying what I've learned in real enterprise environments.
               </p>
             </div>
           </section>
