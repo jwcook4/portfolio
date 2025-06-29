@@ -212,7 +212,25 @@ const CybersecurityPortfolio = () => {
               I'm currently pursuing a degree in Management Information Systems at The University of Alabama, specializing in Business Cyber Security, with plans to graduate in December 2025. I'm passionate about using technology to solve real-world business problems and strengthen cybersecurity postures.
 
               Recently, I developed a cross-platform app for the Association for Information Systems (AIS) using React.js, Prisma, and PostgreSQL. The project challenged me to build seamless front-end and back-end integrations while applying scalable, secure database solutions — sharpening my skills in full-stack development, UI/UX design, and modern database architecture.
+              </p>
               
+              <p style={{
+                fontSize: '16px',
+                color: '#4b5563',
+                lineHeight: 1.7,
+                maxWidth: '800px',
+                margin: '16px 0',
+                textAlign: 'center'
+              }}>
+              <a href="https://apps.apple.com/us/app/capstone-conferences/id6737815476" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb', textDecoration: 'underline', fontWeight: 500 }}>Download my app here</a>
+              </p>
+              
+              <p style={{
+                fontSize: '16px',
+                color: '#4b5563',
+                lineHeight: 1.7,
+                maxWidth: '800px'
+              }}>
               Beyond app development, I've built a strong foundation in programming with C#, SQL, and JavaScript (including frameworks like Vue.js and Angular). I'm also experienced with tools like Tableau, VMware, and Wireshark — having worked on full-stack web builds, SQL database optimization, and hands-on cybersecurity labs focused on identifying and mitigating network vulnerabilities.
               
               This summer, I'm continuing to grow as an Information Security Analyst Intern with Protective Life, where I'm applying what I've learned in real enterprise environments.
