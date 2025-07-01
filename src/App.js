@@ -25,6 +25,7 @@ const CybersecurityPortfolio = () => {
     {
       title: "Capstone Conferences Mobile App",
       description: "Led full-stack development of a cross-platform mobile application using React Native/Expo. Implemented REST APIs with Clerk authentication, built responsive scheduling interfaces, and integrated external university APIs. Achieved 200+ downloads with 40% user engagement.",
+      appLink: "https://apps.apple.com/us/app/capstone-conferences/id6737815476",
       tags: ["React Native", "Expo", "REST APIs", "Clerk Auth", "Full-Stack"],
       award: "🚀 200+ Downloads"
     },
@@ -36,6 +37,7 @@ const CybersecurityPortfolio = () => {
     {
       title: "Quantum Cryptography Strategy",
       description: "Developed innovative quantum-resistant cryptographic solutions, earning 1st place and $2,000 prize at AIS x Walmart competition. Created implementation strategy for post-quantum security in enterprise environments.",
+      competitionLink: "https://communities.aisnet.org/aisstudentchapters/eventshome/competitions/2025competitions/postquantumcomputingchallenge",
       tags: ["Cryptography", "Research", "Innovation", "Enterprise Security"],
       award: "🏆 1st Place - $2K Prize"
     },
@@ -210,19 +212,15 @@ const CybersecurityPortfolio = () => {
                 maxWidth: '800px'
               }}>
               I'm currently pursuing a degree in Management Information Systems at The University of Alabama, specializing in Business Cyber Security, with plans to graduate in December 2025. I'm passionate about using technology to solve real-world business problems and strengthen cybersecurity postures.
-
-              Recently, I developed a cross-platform app for the Association for Information Systems (AIS) using React.js, Prisma, and PostgreSQL. The project challenged me to build seamless front-end and back-end integrations while applying scalable, secure database solutions — sharpening my skills in full-stack development, UI/UX design, and modern database architecture.
               </p>
               
               <p style={{
                 fontSize: '16px',
                 color: '#4b5563',
                 lineHeight: 1.7,
-                maxWidth: '800px',
-                margin: '16px 0',
-                textAlign: 'center'
+                maxWidth: '800px'
               }}>
-              <a href="https://apps.apple.com/us/app/capstone-conferences/id6737815476" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb', textDecoration: 'underline', fontWeight: 500 }}>Download my app here</a>
+              Recently, I developed a cross-platform app for the Association for Information Systems (AIS) using React.js, Prisma, and PostgreSQL. The project challenged me to build seamless front-end and back-end integrations while applying scalable, secure database solutions — sharpening my skills in full-stack development, UI/UX design, and modern database architecture.
               </p>
               
               <p style={{
@@ -232,7 +230,14 @@ const CybersecurityPortfolio = () => {
                 maxWidth: '800px'
               }}>
               Beyond app development, I've built a strong foundation in programming with C#, SQL, and JavaScript (including frameworks like Vue.js and Angular). I'm also experienced with tools like Tableau, VMware, and Wireshark — having worked on full-stack web builds, SQL database optimization, and hands-on cybersecurity labs focused on identifying and mitigating network vulnerabilities.
+              </p>
               
+              <p style={{
+                fontSize: '16px',
+                color: '#4b5563',
+                lineHeight: 1.7,
+                maxWidth: '800px'
+              }}>
               This summer, I'm continuing to grow as an Information Security Analyst Intern with Protective Life, where I'm applying what I've learned in real enterprise environments.
               </p>
             </div>
@@ -282,6 +287,48 @@ const CybersecurityPortfolio = () => {
                     marginBottom: '20px',
                     lineHeight: 1.6
                   }}>{project.description}</p>
+                  
+                  {project.appLink && (
+                    <p style={{
+                      color: '#4b5563',
+                      marginBottom: '20px',
+                      lineHeight: 1.6
+                    }}>
+                      Download my app here: <a 
+                        href={project.appLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{
+                          color: '#2563eb',
+                          textDecoration: 'underline',
+                          fontWeight: 500
+                        }}
+                      >
+                        Capstone Conferences on App Store
+                      </a>
+                    </p>
+                  )}
+                  
+                  {project.competitionLink && (
+                    <p style={{
+                      color: '#4b5563',
+                      marginBottom: '20px',
+                      lineHeight: 1.6
+                    }}>
+                      Check out the competition here: <a 
+                        href={project.competitionLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{
+                          color: '#2563eb',
+                          textDecoration: 'underline',
+                          fontWeight: 500
+                        }}
+                      >
+                        AIS x Walmart Post-Quantum Computing Challenge
+                      </a>
+                    </p>
+                  )}
                   
                   <div style={{
                     display: 'flex',
